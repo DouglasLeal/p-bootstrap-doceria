@@ -163,6 +163,24 @@ footer .info .container {
 footer .info img {
   width: 50%;
 }
+footer .contatos h3 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 2rem;
+  color: #e8c204;
+}
+footer .contato-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  font-size: 1.5rem;
+}
+footer .contato-item i {
+  font-size: 2rem;
+  color: #e8c204;
+  color: #e8c204;
+}
 footer .copy {
   background-color: #822d32;
   padding: 25px 0;

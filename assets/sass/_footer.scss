@@ -22,6 +22,29 @@ footer{
 
     }
 
+    .contatos{
+        h3{
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 2rem;
+            color: v.$secondary-color;
+        }
+    }
+
+    .contato-item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        font-size: 1.5rem;
+
+        i{
+            font-size: 2rem;
+            color: v.$secondary-color;
+            color: v.$secondary-color;
+        }
+    }
+
     .copy{
         background-color: darken(v.$primary-color, 10%);
         padding: 25px 0;
