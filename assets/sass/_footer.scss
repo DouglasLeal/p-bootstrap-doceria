@@ -1,0 +1,73 @@
+@use "_variables.scss" as v;
+
+footer{
+    color: #fff;
+    background-color: v.$primary-color;
+
+    .info{
+        padding: 75px 0;
+        
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+        }
+
+        img{
+
+            width: 50%;
+        }
+
+    }
+
+    .copy{
+        background-color: darken(v.$primary-color, 10%);
+        padding: 25px 0;
+        text-align: center;
+        
+        p{
+            margin-bottom: 0;
+        }
+
+        .empresa{
+            font-size: 1rem;
+            margin-bottom: 15px;
+
+            span{
+                font-weight: 700;
+                font-family: v.$title-font;
+                font-size: 1.25rem;
+            }
+        }
+
+        .dev{
+            font-size: 0.9rem;
+            color: #fff;
+            text-decoration: none;
+            span{
+                font-weight: 700;
+            }
+
+            &:hover span{
+                color: v.$secondary-color;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    footer{
+        .info{
+            .container{
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            img{
+                width: 250px;
+            }
+        }
+    }
+}
