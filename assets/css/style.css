@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap");
+.navbar {
+  background-color: #a83a40 !important;
+}
+.navbar .navbar-toggler {
+  border: 3px solid #e8c204;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.navbar .navbar-toggler span {
+  display: block;
+  background-color: #e8c204;
+  height: 3px;
+  width: 50%;
+}
+.navbar .navbar-collapse {
+  margin-top: 25px;
+}
+.navbar .nav-link {
+  text-align: center;
+  color: #fff;
+  font-family: "Delius Swash Caps", cursive;
+  font-size: 1.25rem;
+  transition: background-color 0.5s;
+}
+.navbar .nav-link:hover {
+  background-color: #e8c204;
+}
+.navbar .nav-link.active {
+  background-color: #e8c204;
+  color: #fff;
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar {
+    padding: 0;
+  }
+  .navbar .navbar-toggler {
+    display: none;
+  }
+  .navbar .navbar-collapse {
+    margin-top: 0;
+  }
+  .navbar .nav-link {
+    padding: 50px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
