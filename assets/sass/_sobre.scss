@@ -7,6 +7,7 @@ main.sobre{
         font-family: v.$title-font;
         color: v.$secondary-color;
         margin-bottom: 50px;
+        font-size: 3rem;
 
         &::after{
             content: '';

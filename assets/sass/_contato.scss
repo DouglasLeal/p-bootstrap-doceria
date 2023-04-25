@@ -1,0 +1,90 @@
+@use "_variables.scss" as v;
+
+main.contato{
+    padding: 75px 0;
+
+    h1{
+        font-family: v.$title-font;
+        color: v.$secondary-color;
+        margin-bottom: 50px;
+        font-size: 3rem;
+
+        &::after{
+            content: '';
+            display: block;
+            border-bottom: 3px dashed v.$primary-color;
+        }
+    }
+
+    h2{
+        font-family: v.$title-font;
+        font-size: 2rem;
+        color: v.$primary-color;
+        margin-bottom: 10px;
+    }
+
+    .telefone-itens{
+        margin-bottom: 50px;
+    }
+
+    .telefone-item{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        i{
+            font-size: 2rem;
+            color: v.$secondary-color;;
+        }
+
+        span{
+            font-size: 1.5rem;
+        }
+    }
+
+    .social-itens{
+        display: flex;
+        gap: 25px;
+        margin-bottom: 50px;
+    }
+    .social-item{
+        color: v.$secondary-color;
+        text-decoration: none;
+        transition: color .5s;
+
+        i{
+            font-size: 3rem;
+        }
+
+        &:hover{
+            color: v.$primary-color;
+        }
+    }
+
+    form{
+        .btn-primary{
+            background-color: v.$primary-color;
+            border-color: v.$primary-color;
+            font-size: 1.25rem;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+
+            &:active{
+                background-color: darken(v.$primary-color, 5);
+                border-color: v.$primary-color;
+            }
+        }
+
+        .form-control{
+            border-color: v.$secondary-color;
+
+            &:focus{
+                box-shadow: 0px 0px 5px 1px v.$primary-color;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    
+}

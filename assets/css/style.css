@@ -153,6 +153,7 @@ main.sobre h1 {
   font-family: "Pacifico", cursive;
   color: #e8c204;
   margin-bottom: 50px;
+  font-size: 3rem;
 }
 main.sobre h1::after {
   content: "";
@@ -165,6 +166,75 @@ main.sobre p {
 main.sobre p span {
   font-weight: 700;
   color: #a83a40;
+}
+
+main.contato {
+  padding: 75px 0;
+}
+main.contato h1 {
+  font-family: "Pacifico", cursive;
+  color: #e8c204;
+  margin-bottom: 50px;
+  font-size: 3rem;
+}
+main.contato h1::after {
+  content: "";
+  display: block;
+  border-bottom: 3px dashed #a83a40;
+}
+main.contato h2 {
+  font-family: "Pacifico", cursive;
+  font-size: 2rem;
+  color: #a83a40;
+  margin-bottom: 10px;
+}
+main.contato .telefone-itens {
+  margin-bottom: 50px;
+}
+main.contato .telefone-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+main.contato .telefone-item i {
+  font-size: 2rem;
+  color: #e8c204;
+}
+main.contato .telefone-item span {
+  font-size: 1.5rem;
+}
+main.contato .social-itens {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 50px;
+}
+main.contato .social-item {
+  color: #e8c204;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+main.contato .social-item i {
+  font-size: 3rem;
+}
+main.contato .social-item:hover {
+  color: #a83a40;
+}
+main.contato form .btn-primary {
+  background-color: #a83a40;
+  border-color: #a83a40;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+main.contato form .btn-primary:active {
+  background-color: #953339;
+  border-color: #a83a40;
+}
+main.contato form .form-control {
+  border-color: #e8c204;
+}
+main.contato form .form-control:focus {
+  box-shadow: 0px 0px 5px 1px #a83a40;
 }
 
 footer {
