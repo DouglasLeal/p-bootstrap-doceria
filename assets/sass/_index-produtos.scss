@@ -1,0 +1,47 @@
+@use "_variables.scss" as v;
+
+.produtos{
+    padding: 75px 0;
+
+    .produto-item{
+        position: relative;
+    }
+
+    .produto-item-conteudo{
+        opacity: 1;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;        
+        font-family: v.$title-font;
+        font-size: 5rem;
+        transition: opacity .5s;
+        cursor: default;
+    }
+
+    .produto-item-conteudo-primary{
+        background-color: rgba(v.$primary-color, .75);
+        color: v.$secondary-color;
+    }
+
+    .produto-item-conteudo-secondary{
+        background-color: rgba(v.$secondary-color, .75);
+        color: v.$primary-color;
+    }
+
+    .produto-item:hover{
+        .produto-item-conteudo{
+            opacity: 1;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .produtos{
+        .produto-item-conteudo{
+            opacity: 0;
+        }
+    }
+}

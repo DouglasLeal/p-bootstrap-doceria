@@ -110,5 +110,41 @@
     text-align: left;
   }
 }
+.produtos {
+  padding: 75px 0;
+}
+.produtos .produto-item {
+  position: relative;
+}
+.produtos .produto-item-conteudo {
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Pacifico", cursive;
+  font-size: 5rem;
+  transition: opacity 0.5s;
+  cursor: default;
+}
+.produtos .produto-item-conteudo-primary {
+  background-color: rgba(168, 58, 64, 0.75);
+  color: #e8c204;
+}
+.produtos .produto-item-conteudo-secondary {
+  background-color: rgba(232, 194, 4, 0.75);
+  color: #a83a40;
+}
+.produtos .produto-item:hover .produto-item-conteudo {
+  opacity: 1;
+}
+
+@media screen and (min-width: 1024px) {
+  .produtos .produto-item-conteudo {
+    opacity: 0;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
