@@ -1,0 +1,25 @@
+@use "_variables.scss" as v;
+
+.carousel{
+    .carousel-control-prev, .carousel-control-next{
+        background-color: v.$primary-color;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .carousel{
+        .carousel-control-prev, .carousel-control-next{
+            width: 150px;
+        }
+
+        img{
+            height: 75vh;
+        }
+
+        .carousel-indicators{
+            button.active{
+                background-color: v.$primary-color;
+            }
+        }
+    }
+}

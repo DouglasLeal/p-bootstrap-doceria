@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap");
 .navbar {
   background-color: #a83a40 !important;
+  border-bottom: 3px solid #e8c204;
 }
 .navbar .navbar-toggler {
   border: 3px solid #e8c204;
@@ -49,6 +50,21 @@
   }
   .navbar .nav-link {
     padding: 50px;
+  }
+}
+.carousel .carousel-control-prev, .carousel .carousel-control-next {
+  background-color: #a83a40;
+}
+
+@media screen and (min-width: 1024px) {
+  .carousel .carousel-control-prev, .carousel .carousel-control-next {
+    width: 150px;
+  }
+  .carousel img {
+    height: 75vh;
+  }
+  .carousel .carousel-indicators button.active {
+    background-color: #a83a40;
   }
 }
 

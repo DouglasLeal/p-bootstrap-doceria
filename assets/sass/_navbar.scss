@@ -2,6 +2,7 @@
 
 .navbar {
     background-color: v.$primary-color !important;
+    border-bottom: 3px solid v.$secondary-color;
 
     .navbar-toggler {
         border: 3px solid v.$secondary-color;
