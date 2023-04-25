@@ -1,0 +1,26 @@
+@use "_variables.scss" as v;
+
+main.sobre{
+    padding: 75px 0;
+
+    h1{
+        font-family: v.$title-font;
+        color: v.$secondary-color;
+        margin-bottom: 50px;
+
+        &::after{
+            content: '';
+            display: block;
+            border-bottom: 3px dashed v.$primary-color;
+        }
+    }
+
+    p{
+        font-size: 1.5rem;
+
+        span{
+            font-weight: 700;
+            color: v.$primary-color;
+        }
+    }
+}

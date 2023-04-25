@@ -146,6 +146,27 @@
     opacity: 0;
   }
 }
+main.sobre {
+  padding: 75px 0;
+}
+main.sobre h1 {
+  font-family: "Pacifico", cursive;
+  color: #e8c204;
+  margin-bottom: 50px;
+}
+main.sobre h1::after {
+  content: "";
+  display: block;
+  border-bottom: 3px dashed #a83a40;
+}
+main.sobre p {
+  font-size: 1.5rem;
+}
+main.sobre p span {
+  font-weight: 700;
+  color: #a83a40;
+}
+
 footer {
   color: #fff;
   background-color: #a83a40;
