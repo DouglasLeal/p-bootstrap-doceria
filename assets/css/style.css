@@ -168,6 +168,56 @@ main.sobre p span {
   color: #a83a40;
 }
 
+main.produtos {
+  padding: 75px 0;
+}
+main.produtos h1 {
+  font-family: "Pacifico", cursive;
+  color: #e8c204;
+  margin-bottom: 50px;
+  font-size: 3rem;
+  border-bottom: 3px dashed #a83a40;
+}
+main.produtos .produto-itens {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+main.produtos .produto-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main.produtos .produto-item img {
+  width: 50%;
+  border-radius: 100%;
+  border: 5px solid #a83a40;
+}
+main.produtos .produto-item h2 {
+  font-family: "Pacifico", cursive;
+  color: #a83a40;
+  border-bottom: 3px dashed #e8c204;
+}
+main.produtos .produto-item p {
+  font-size: 1.25rem;
+}
+
+@media screen and (min-width: 1024px) {
+  main.produtos .produto-item {
+    flex-direction: row;
+    gap: 50px;
+  }
+  main.produtos .produto-item img {
+    width: 33%;
+  }
+  main.produtos .produto-item-reverse {
+    flex-direction: row-reverse;
+    gap: 50px;
+  }
+  main.produtos .produto-item-reverse img {
+    width: 33%;
+  }
+}
 main.contato {
   padding: 75px 0;
 }

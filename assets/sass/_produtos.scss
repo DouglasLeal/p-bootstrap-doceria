@@ -1,0 +1,63 @@
+@use "_variables.scss" as v;
+
+main.produtos {
+    padding: 75px 0;
+
+    h1 {
+        font-family: v.$title-font;
+        color: v.$secondary-color;
+        margin-bottom: 50px;
+        font-size: 3rem;
+        border-bottom: 3px dashed v.$primary-color;
+    }
+
+    .produto-itens{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .produto-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;        
+
+        img {
+            width: 50%;
+            border-radius: 100%;
+            border: 5px solid v.$primary-color;
+        }
+
+        h2{
+            font-family: v.$title-font;
+            color: v.$primary-color;
+            border-bottom: 3px dashed v.$secondary-color;
+        }
+
+        p{
+            font-size: 1.25rem;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    main.produtos {
+        .produto-item {
+            flex-direction: row;
+            gap: 50px;
+
+            img{
+                width: 33%;
+            }
+        }
+
+        .produto-item-reverse {
+            flex-direction: row-reverse;
+            gap: 50px;
+
+            img{
+                width: 33%;
+            }
+        }
+    }
+}
