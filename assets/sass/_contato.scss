@@ -8,12 +8,7 @@ main.contato{
         color: v.$secondary-color;
         margin-bottom: 50px;
         font-size: 3rem;
-
-        &::after{
-            content: '';
-            display: block;
-            border-bottom: 3px dashed v.$primary-color;
-        }
+        border-bottom: 3px dashed v.$primary-color;
     }
 
     h2{

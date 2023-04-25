@@ -154,10 +154,6 @@ main.sobre h1 {
   color: #e8c204;
   margin-bottom: 50px;
   font-size: 3rem;
-}
-main.sobre h1::after {
-  content: "";
-  display: block;
   border-bottom: 3px dashed #a83a40;
 }
 main.sobre p {
@@ -226,10 +222,6 @@ main.contato h1 {
   color: #e8c204;
   margin-bottom: 50px;
   font-size: 3rem;
-}
-main.contato h1::after {
-  content: "";
-  display: block;
   border-bottom: 3px dashed #a83a40;
 }
 main.contato h2 {
